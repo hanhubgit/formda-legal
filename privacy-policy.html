@@ -32,7 +32,12 @@
         background: var(--bg);
         color: var(--fg);
         font-family:
-          -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+          -apple-system,
+          Segoe UI,
+          Roboto,
+          Helvetica,
+          Arial,
+          sans-serif;
         line-height: 1.6;
       }
       .wrap {
@@ -107,15 +112,14 @@
     <div class="wrap">
       <!-- ============================= TÜRKÇE ============================= -->
       <h1>Formda — Gizlilik Politikası</h1>
-      <p class="updated">Son güncelleme: 21 Temmuz 2026</p>
+      <p class="updated">Son güncelleme: 24 Temmuz 2026</p>
 
       <p>
-        Bu Gizlilik Politikası, Formda mobil uygulamasını ("Formda", "uygulama", "biz")
-        kullanırken hangi kişisel verilerin toplandığını, bu verilerin nasıl işlendiğini,
-        kimlerle paylaşıldığını, ne kadar süreyle saklandığını ve 6698 sayılı Kişisel
-        Verilerin Korunması Kanunu ("KVKK") ile Google Play Data Safety gereksinimleri
-        uyarınca sahip olduğunuz hakları açıklar. Uygulamayı kullanarak bu politikayı kabul
-        etmiş olursunuz.
+        Bu Gizlilik Politikası, Formda mobil uygulamasını ("Formda", "uygulama", "biz") kullanırken
+        hangi kişisel verilerin toplandığını, bu verilerin nasıl işlendiğini, kimlerle
+        paylaşıldığını, ne kadar süreyle saklandığını ve 6698 sayılı Kişisel Verilerin Korunması
+        Kanunu ("KVKK") ile Google Play Data Safety gereksinimleri uyarınca sahip olduğunuz hakları
+        açıklar. Uygulamayı kullanarak bu politikayı kabul etmiş olursunuz.
       </p>
 
       <h2>1. Topladığımız veriler</h2>
@@ -130,13 +134,15 @@
           <tr>
             <td>Hesap verisi</td>
             <td>
-              E-posta adresi, şifre (geri döndürülemez biçimde özetlenerek — hash —
-              saklanır; biz düz metin olarak görmeyiz)
+              E-posta adresi, şifre (geri döndürülemez biçimde özetlenerek — hash — saklanır; biz
+              düz metin olarak görmeyiz)
             </td>
           </tr>
           <tr>
             <td>Profil verisi</td>
-            <td>Doğum yılı, boy, kilo, cinsiyet, aktivite seviyesi, hedef (kilo verme/koruma/alma)</td>
+            <td>
+              Doğum yılı, boy, kilo, cinsiyet, aktivite seviyesi, hedef (kilo verme/koruma/alma)
+            </td>
           </tr>
           <tr>
             <td>
@@ -144,8 +150,8 @@
               <em>(özel nitelikli kişisel veri)</em>
             </td>
             <td>
-              Seçtiğiniz sağlık durumları (ör. tip 1/tip 2 diyabet, çölyak, hipertansiyon)
-              ve bunlara bağlı beslenme uyarıları. Bu veri yalnızca açık rızanızla toplanır.
+              Seçtiğiniz sağlık durumları (ör. tip 1/tip 2 diyabet, çölyak, hipertansiyon) ve
+              bunlara bağlı beslenme uyarıları. Bu veri yalnızca açık rızanızla toplanır.
             </td>
           </tr>
           <tr>
@@ -153,11 +159,31 @@
             <td>Yemek (besin) günlüğü, su tüketimi, antrenman kayıtları, adım sayısı</td>
           </tr>
           <tr>
+            <td>Konum / rota verisi</td>
+            <td>
+              Yalnızca siz bir koşu veya bisiklet kaydını başlattığınızda toplanan hassas konum
+              noktaları ve bunlardan oluşturulan rota, mesafe, süre, tempo/hız bilgisi. Bu veri
+              yalnızca aktif bir kayıt sırasında toplanır, hesabınıza bağlı olarak saklanır;
+              satılmaz ve paylaşılmaz.
+            </td>
+          </tr>
+          <tr>
+            <td>Adım ve sağlık verisi (Health Connect)</td>
+            <td>
+              Android Health Connect uygulamasından yalnızca okuma izniyle (<code>READ_STEPS</code>)
+              okunan günlük adım sayınız; bu veriyi Health Connect'e geri yazmayız. Bu ham okuma,
+              hesabınıza bağlı olarak yalnızca Supabase'te saklanır ve kimliğinizle birlikte hiçbir
+              üçüncü tarafla paylaşılmaz. Diğer adım kayıtlarınızla aynı şekilde, bu sayı da
+              aşağıdaki §3'te açıklanan anonimleştirilmiş haftalık özetin (toplam adım, günlük
+              ortalama adım alanları) bir parçası olarak OpenAI'a gönderilebilir; bu özet isminizi,
+              e-postanızı, hesap kimliğinizi veya sağlık durumunuzu içermez.
+            </td>
+          </tr>
+          <tr>
             <td>Haftalık rapor verisi</td>
             <td>
-              Her hafta için saklanan sayısal özet, bu özetten üretilen motivasyon mesajı
-              ve "stüdyo sesi" ile sesli okuma özelliğini kullandığınızda önbelleğe alınan
-              ses dosyası
+              Her hafta için saklanan sayısal özet, bu özetten üretilen motivasyon mesajı ve "stüdyo
+              sesi" ile sesli okuma özelliğini kullandığınızda önbelleğe alınan ses dosyası
             </td>
           </tr>
           <tr>
@@ -168,16 +194,16 @@
             <td>Fotoğraflar</td>
             <td>
               Yapay zekâ ile yemek tanıma özelliği için çektiğiniz veya seçtiğiniz öğün
-              fotoğrafları. Bu fotoğraflar yalnızca tanıma isteği sırasında, Supabase
-              üzerindeki sunucu fonksiyonumuz aracılığıyla OpenAI'a iletilir; ne
-              sunucularımızda ne de Supabase'te saklanmaz.
+              fotoğrafları. Bu fotoğraflar yalnızca tanıma isteği sırasında, Supabase üzerindeki
+              sunucu fonksiyonumuz aracılığıyla OpenAI'a iletilir; ne sunucularımızda ne de
+              Supabase'te saklanmaz.
             </td>
           </tr>
           <tr>
             <td>Kullanım ve hata (crash) verisi</td>
             <td>
-              Uygulama içi etkileşim istatistikleri ve teknik hata raporları (cihaz modeli,
-              işletim sistemi sürümü, hata yığın izi gibi teşhis bilgileri)
+              Uygulama içi etkileşim istatistikleri ve teknik hata raporları (cihaz modeli, işletim
+              sistemi sürümü, hata yığın izi gibi teşhis bilgileri)
             </td>
           </tr>
         </tbody>
@@ -187,19 +213,25 @@
       <ul>
         <li>Hesabınızı oluşturmak, doğrulamak ve güvenliğini sağlamak;</li>
         <li>
-          Kişiselleştirilmiş kalori, makro besin ve aktivite hedefleri hesaplamak ve
-          göstermek;
+          Kişiselleştirilmiş kalori, makro besin ve aktivite hedefleri hesaplamak ve göstermek;
         </li>
         <li>
-          Sağlık durumunuza göre beslenme uyarıları üretmek (ör. yüksek glisemik indeksli
-          bir yiyecek için diyabet uyarısı);
+          Sağlık durumunuza göre beslenme uyarıları üretmek (ör. yüksek glisemik indeksli bir
+          yiyecek için diyabet uyarısı);
         </li>
         <li>Fotoğraflardan yemek tanıma ve porsiyon tahmini yapmak (yapay zekâ ile);</li>
         <li>
-          Haftalık özet raporlarını ve motivasyon mesajlarını üretmek ve istediğinizde bu
-          mesajı sesli olarak okumak ("stüdyo sesi" seçeneğinde mesaj metni OpenAI'a
-          gönderilir; "cihaz sesi" seçeneğinde metin telefonunuzun kendi konuşma motoruna
-          verilir);
+          Başlattığınız koşu/bisiklet kayıtları sırasında rotanızı, mesafenizi, sürenizi,
+          tempo/hızınızı ve yaktığınız kaloriyi hesaplamak ve size göstermek;
+        </li>
+        <li>
+          Health Connect'ten okunan adım verinizi uygulama içi antrenman kayıtlarınızla eşleştirerek
+          mükerrer kalori sayımını önlemek (etkinlik kaydının kalorisini buna göre düzeltmek);
+        </li>
+        <li>
+          Haftalık özet raporlarını ve motivasyon mesajlarını üretmek ve istediğinizde bu mesajı
+          sesli olarak okumak ("stüdyo sesi" seçeneğinde mesaj metni OpenAI'a gönderilir; "cihaz
+          sesi" seçeneğinde metin telefonunuzun kendi konuşma motoruna verilir);
         </li>
         <li>Uygulamanın teknik olarak düzgün çalıştığından emin olmak ve hataları gidermek;</li>
         <li>Yasal yükümlülüklere uymak ve kullanıcı taleplerine (erişim/silme) yanıt vermek.</li>
@@ -207,8 +239,8 @@
 
       <h2>3. Verilerinizi paylaştığımız üçüncü taraflar</h2>
       <p>
-        Verilerinizi satmayız. Hizmeti sunabilmek için aşağıdaki hizmet sağlayıcılarla
-        sınırlı ve amaca uygun ölçüde veri paylaşırız:
+        Verilerinizi satmayız. Hizmeti sunabilmek için aşağıdaki hizmet sağlayıcılarla sınırlı ve
+        amaca uygun ölçüde veri paylaşırız:
       </p>
       <table>
         <thead>
@@ -223,33 +255,34 @@
             <td>Supabase</td>
             <td>Barındırma / veritabanı / kimlik doğrulama altyapısı</td>
             <td>
-              Hesap, profil, sağlık, günlük ve haftalık rapor verilerinizin tamamı ile
-              raporlarınızın önbelleğe alınmış ses dosyaları — bu veriler Supabase
-              altyapısında saklanır (bulut barındırma sağlayıcısı, veri işleyen
-              sıfatıyla). Öğün fotoğraflarınız yalnızca tanıma isteği sırasında
-              Supabase üzerindeki sunucu fonksiyonumuzdan geçer; Supabase'te saklanmaz.
+              Hesap, profil, sağlık, günlük, haftalık rapor ve etkinlik (koşu/bisiklet)
+              kayıtlarınızın (rota, mesafe, süre, tempo/hız dahil) tamamı ile raporlarınızın
+              önbelleğe alınmış ses dosyaları — bu veriler Supabase altyapısında saklanır (bulut
+              barındırma sağlayıcısı, veri işleyen sıfatıyla). Health Connect'ten okunan günlük adım
+              sayınız da diğer adım kayıtlarınız gibi Supabase'te saklanır; bu veri de aşağıdaki
+              OpenAI satırında açıklanan anonimleştirilmiş haftalık özete dahil olabilir. Öğün
+              fotoğraflarınız yalnızca tanıma isteği sırasında Supabase üzerindeki sunucu
+              fonksiyonumuzdan geçer; Supabase'te saklanmaz.
             </td>
           </tr>
           <tr>
             <td>OpenAI</td>
             <td>Yemek tanıma (görü), motivasyon metni üretimi ve metinden ses</td>
             <td>
-              (a) Yemek tanıma için gönderdiğiniz öğün fotoğrafları; (b) haftalık
-              motivasyon mesajının yazılması için <strong>anonimleştirilmiş haftalık
-              özetiniz</strong> — yalnızca şu on alandan oluşur: toplam adım, günlük
-              ortalama adım, kalori hedefine uyum yüzdesi, antrenman sayısı, antrenmanlarda
-              yakılan toplam kalori, günlük ortalama su tüketimi, kayıt yapılan gün sayısı,
-              seri gün sayısı, hedefiniz (kilo verme / koruma / alma) ve haftanızın genel
-              değerlendirme etiketi (güçlü / istikrarlı / hafif); (c) "stüdyo sesi" ile
-              sesli okuma özelliğini kullandığınızda, bu özetten üretilmiş olan
+              (a) Yemek tanıma için gönderdiğiniz öğün fotoğrafları; (b) haftalık motivasyon
+              mesajının yazılması için <strong>anonimleştirilmiş haftalık özetiniz</strong> —
+              yalnızca şu on alandan oluşur: toplam adım, günlük ortalama adım, kalori hedefine uyum
+              yüzdesi, antrenman sayısı, antrenmanlarda yakılan toplam kalori, günlük ortalama su
+              tüketimi, kayıt yapılan gün sayısı, seri gün sayısı, hedefiniz (kilo verme / koruma /
+              alma) ve haftanızın genel değerlendirme etiketi (güçlü / istikrarlı / hafif); (c)
+              "stüdyo sesi" ile sesli okuma özelliğini kullandığınızda, bu özetten üretilmiş olan
               <strong>mesaj metninin kendisi</strong> de sese dönüştürülmek üzere OpenAI'a
-              gönderilir. Ne bu özet ne de ondan üretilen metin; isim, e-posta, hesap
-              kimliği veya sağlık durumu içerir ve bunlar (b) ile (c) adımlarında OpenAI'a
-              hiçbir şekilde gönderilmez. (a) adımında ise gönderdiğiniz fotoğrafın
-              karesinde ne varsa OpenAI'a iletilmiş olur. Oluşan ses dosyası hesabınıza
-              bağlı gizli bir depolama alanında önbelleğe alınır; hesabınızı sildiğinizde
-              bu ses dosyalarını da sileriz. Nadir bir depolama hatası buna engel olursa
-              hesabınızın silinmesi yine de tamamlanır.
+              gönderilir. Ne bu özet ne de ondan üretilen metin; isim, e-posta, hesap kimliği veya
+              sağlık durumu içerir ve bunlar (b) ile (c) adımlarında OpenAI'a hiçbir şekilde
+              gönderilmez. (a) adımında ise gönderdiğiniz fotoğrafın karesinde ne varsa OpenAI'a
+              iletilmiş olur. Oluşan ses dosyası hesabınıza bağlı gizli bir depolama alanında
+              önbelleğe alınır; hesabınızı sildiğinizde bu ses dosyalarını da sileriz. Nadir bir
+              depolama hatası buna engel olursa hesabınızın silinmesi yine de tamamlanır.
             </td>
           </tr>
           <tr>
@@ -258,13 +291,23 @@
             <td>Taradığınız barkod numarası; hesap kimliğiniz gönderilmez.</td>
           </tr>
           <tr>
+            <td>OpenFreeMap</td>
+            <td>Harita altlığı (harita karoları)</td>
+            <td>
+              Etkinlik haritası ekrandayken (canlı koşu/bisiklet kaydı sırasında ve rota
+              özeti/detayı görüntülenirken) harita karoları OpenFreeMap sunucularından indirilir.
+              Her web isteğinde olduğu gibi bu istekler, görüntülenen yaklaşık harita bölgesini ve
+              cihazınızın IP adresini OpenFreeMap'e görünür kılar. OpenFreeMap'e hesap verisi,
+              kimlik bilgisi veya kayıtlı rotalarınız hiçbir aşamada gönderilmez.
+            </td>
+          </tr>
+          <tr>
             <td>Sentry</td>
             <td>Hata (crash) izleme ve teşhis</td>
             <td>
-              Teknik hata raporları (yığın izi, cihaz/işletim sistemi bilgisi). Gönderim
-              öncesi e-posta, sağlık verisi ve diğer kişisel alanlar otomatik olarak
-              temizlenir (PII scrubbing); Sentry'ye kimliğinizi belirleyen veri
-              gönderilmez.
+              Teknik hata raporları (yığın izi, cihaz/işletim sistemi bilgisi). Gönderim öncesi
+              e-posta, sağlık verisi ve diğer kişisel alanlar otomatik olarak temizlenir (PII
+              scrubbing); Sentry'ye kimliğinizi belirleyen veri gönderilmez.
             </td>
           </tr>
         </tbody>
@@ -272,61 +315,73 @@
 
       <h2>3.1. Yurt dışına aktarım</h2>
       <p>
-        Yukarıda sayılan hizmet sağlayıcıların barındırma ve veri işleme altyapısı Türkiye
-        dışında yer alır. Bu nedenle bu bölümde belirtilen veriler, hizmetin
-        sunulabilmesi için yurt dışına aktarılmaktadır. Aktarım her durumda yukarıdaki
-        tabloda belirtilen kapsam ve amaçla sınırlıdır; sağlık durumlarınız yalnızca
-        veritabanımızı barındıran Supabase altyapısında saklanır ve OpenAI, Sentry veya
-        OpenFoodFacts'e hiçbir aşamada aktarılmaz.
+        Yukarıda sayılan hizmet sağlayıcıların barındırma ve veri işleme altyapısı Türkiye dışında
+        yer alır. Bu nedenle bu bölümde belirtilen veriler, hizmetin sunulabilmesi için yurt dışına
+        aktarılmaktadır. Aktarım her durumda yukarıdaki tabloda belirtilen kapsam ve amaçla
+        sınırlıdır; sağlık durumlarınız ile konum/rota verileriniz yalnızca veritabanımızı
+        barındıran Supabase altyapısında saklanır ve OpenAI, Sentry veya OpenFoodFacts'e hiçbir
+        aşamada aktarılmaz. Health Connect'ten okunan ham adım verileriniz de yalnızca Supabase'te
+        saklanır; §1'de açıklandığı gibi, günlük toplam adım sayınız diğer adım kayıtlarınızla aynı
+        anonimleştirme güvencelerine tabidir ve OpenAI'a yalnızca yukarıdaki tabloda açıklanan
+        anonimleştirilmiş haftalık özetin bir parçası olarak gönderilebilir.
+      </p>
+      <p>
+        Bu aktarımların hukuki dayanağı, 6698 sayılı Kişisel Verilerin Korunması Kanunu'nun
+        9. maddesi uyarınca <strong>açık rızanızdır</strong>. Hesap oluştururken bu Gizlilik
+        Politikası'nı ve yukarıda açıklanan yurt dışına aktarım kapsamını onaylayarak açık
+        rızanızı vermiş olursunuz; rızanızı, hesap ayarlarından hesabınızı silerek dilediğiniz
+        zaman geri alabilirsiniz.
       </p>
 
       <h2>4. Veri saklama süresi</h2>
       <p>
-        Verileriniz, hesabınız aktif olduğu sürece ve hizmeti size sunmak için gerekli
-        olduğu ölçüde saklanır. Öğün fotoğrafları bunun dışındadır: fotoğraf yalnızca
-        tanıma için OpenAI'a iletilir, sunucularımızda saklanmaz ve günlüğünüze sadece
-        tanınan besin kaydı (ad, kalori, makro besinler, porsiyon) yazılır; telefonunuzda
-        ise fotoğrafın geçici bir kopyası, uygulamanın önbelleği temizlenene kadar
-        kalabilir. Hesabınızı sildiğinizde önce raporlarınızın önbelleğe alınmış ses
-        dosyalarını, ardından hesabınızı ve sunucularımızdaki tüm kişisel verilerinizi
-        (profil, sağlık durumları, günlük kayıtları ve haftalık raporlar dahil) kalıcı
-        olarak ve geri döndürülemez şekilde sileriz; silinecek bir öğün fotoğrafı ise
-        zaten bulunmaz. Nadir bir depolama hatası ses dosyalarının silinmesini engellerse
-        hesabınızın silinmesi yine de tamamlanır. Sentry'ye gönderilen ve kimliğinizden
-        arındırılmış teknik hata kayıtları, Sentry'nin kendi saklama politikası uyarınca
-        ayrıca tutulabilir; bu kayıtlar sizi kimliklendirmez.
+        Verileriniz, hesabınız aktif olduğu sürece ve hizmeti size sunmak için gerekli olduğu ölçüde
+        saklanır. Öğün fotoğrafları bunun dışındadır: fotoğraf yalnızca tanıma için OpenAI'a
+        iletilir, sunucularımızda saklanmaz ve günlüğünüze sadece tanınan besin kaydı (ad, kalori,
+        makro besinler, porsiyon) yazılır; telefonunuzda ise fotoğrafın geçici bir kopyası,
+        uygulamanın önbelleği temizlenene kadar kalabilir. Konum/rota verileriniz ve Health
+        Connect'ten okunan adım verileriniz de hesabınız aktif olduğu sürece saklanır; bir etkinlik
+        (koşu/bisiklet) kaydını istediğiniz zaman etkinlik detayından tek tek silebilirsiniz.
+        Hesabınızı sildiğinizde önce raporlarınızın önbelleğe alınmış ses dosyalarını, ardından
+        hesabınızı ve sunucularımızdaki tüm kişisel verilerinizi (profil, sağlık durumları, günlük
+        kayıtları, etkinlik/konum kayıtları ve haftalık raporlar dahil) kalıcı olarak ve geri
+        döndürülemez şekilde sileriz; silinecek bir öğün fotoğrafı ise zaten bulunmaz. Nadir bir
+        depolama hatası ses dosyalarının silinmesini engellerse hesabınızın silinmesi yine de
+        tamamlanır. Sentry'ye gönderilen ve kimliğinizden arındırılmış teknik hata kayıtları,
+        Sentry'nin kendi saklama politikası uyarınca ayrıca tutulabilir; bu kayıtlar sizi
+        kimliklendirmez.
       </p>
 
       <h2>5. Haklarınız</h2>
       <p>
-        KVKK madde 11 ve ilgili mevzuat uyarınca; verilerinizin işlenip işlenmediğini
-        öğrenme, işlenmişse buna ilişkin bilgi talep etme, işlenme amacını ve amacına
-        uygun kullanılıp kullanılmadığını öğrenme, verilerinizin düzeltilmesini veya
-        silinmesini isteme haklarına sahipsiniz. Bu hakları uygulama içinden doğrudan
-        kullanabilirsiniz:
+        KVKK madde 11 ve ilgili mevzuat uyarınca; verilerinizin işlenip işlenmediğini öğrenme,
+        işlenmişse buna ilişkin bilgi talep etme, işlenme amacını ve amacına uygun kullanılıp
+        kullanılmadığını öğrenme, verilerinizin düzeltilmesini veya silinmesini isteme haklarına
+        sahipsiniz. Bu hakları uygulama içinden doğrudan kullanabilirsiniz:
       </p>
       <ul>
         <li>
-          <strong>Verilerinize erişim / taşınabilirlik:</strong> Profil → "Verilerimi
-          indir" ile veritabanımızdaki tüm verilerinizin JSON biçiminde bir kopyasını
-          anında dışa aktarabilir, paylaşabilir veya kendinize saklayabilirsiniz.
+          <strong>Verilerinize erişim / taşınabilirlik:</strong> Profil → "Verilerimi indir" ile
+          veritabanımızdaki tüm verilerinizin JSON biçiminde bir kopyasını anında dışa aktarabilir,
+          paylaşabilir veya kendinize saklayabilirsiniz.
         </li>
         <li>
-          <strong>Silme:</strong> Profil → "Hesabımı sil" ile hesabınızı ve
-          sunucularımızdaki tüm ilişkili verilerinizi (profil, sağlık, günlükler, haftalık
-          raporlar ve bunların önbelleğe alınmış ses dosyaları) kalıcı olarak
-          silebilirsiniz. Bu işlem geri alınamaz. Ses dosyalarının silinmesi nadir bir
-          depolama hatasına takılırsa hesabınız yine de silinir.
+          <strong>Silme:</strong> Profil → "Hesabımı sil" ile hesabınızı ve sunucularımızdaki tüm
+          ilişkili verilerinizi (profil, sağlık, günlükler, etkinlik/konum kayıtları, haftalık
+          raporlar ve bunların önbelleğe alınmış ses dosyaları) kalıcı olarak silebilirsiniz. Bu
+          işlem geri alınamaz. Ses dosyalarının silinmesi nadir bir depolama hatasına takılırsa
+          hesabınız yine de silinir. Tek bir koşu/bisiklet kaydını hesabınızı silmeden de, ilgili
+          etkinliğin detay ekranından kalıcı olarak silebilirsiniz.
         </li>
         <li>
-          <strong>Rızanın geri alınması:</strong> Sağlık bilgisi rızanızı, uygulama
-          içindeki Sağlık Ayarları bölümünden dilediğiniz zaman geri alabilir veya
-          kayıtlı sağlık durumlarınızı silebilirsiniz.
+          <strong>Rızanın geri alınması:</strong> Sağlık bilgisi rızanızı, uygulama içindeki Sağlık
+          Ayarları bölümünden dilediğiniz zaman geri alabilir veya kayıtlı sağlık durumlarınızı
+          silebilirsiniz.
         </li>
       </ul>
       <p>
-        Yukarıdaki uygulama içi yollar dışında talepleriniz için aşağıdaki iletişim
-        bilgisinden veri sorumlusuna ulaşabilirsiniz.
+        Yukarıdaki uygulama içi yollar dışında talepleriniz için aşağıdaki iletişim bilgisinden veri
+        sorumlusuna ulaşabilirsiniz.
       </p>
 
       <h2>6. Veri sorumlusu iletişim bilgisi (KVKK)</h2>
@@ -340,15 +395,14 @@
 
       <h2>7. Çocukların gizliliği</h2>
       <p>
-        Formda, 16 yaş altı kullanıcılara yönelik değildir. 16 yaşın altında olduğunuzu
-        fark edersek hesabınızı ve ilişkili verilerinizi sileriz.
+        Formda, 16 yaş altı kullanıcılara yönelik değildir. 16 yaşın altında olduğunuzu fark edersek
+        hesabınızı ve ilişkili verilerinizi sileriz.
       </p>
 
       <h2>8. Bu politikadaki değişiklikler</h2>
       <p>
-        Bu politikayı zaman zaman güncelleyebiliriz. Önemli değişikliklerde uygulama
-        içinden veya e-posta yoluyla bilgilendirme yaparız. Güncel sürüm her zaman bu
-        sayfada yer alır.
+        Bu politikayı zaman zaman güncelleyebiliriz. Önemli değişikliklerde uygulama içinden veya
+        e-posta yoluyla bilgilendirme yaparız. Güncel sürüm her zaman bu sayfada yer alır.
       </p>
 
       <hr class="lang-divider" />
@@ -356,14 +410,14 @@
       <!-- ============================= ENGLISH ============================= -->
       <div lang="en">
         <h1>Formda — Privacy Policy</h1>
-        <p class="updated">Last updated: July 21, 2026</p>
+        <p class="updated">Last updated: July 24, 2026</p>
 
         <p>
-          This Privacy Policy explains what personal data the Formda mobile app ("Formda",
-          "the app", "we") collects when you use it, how that data is processed, who we
-          share it with, how long we retain it, and the rights you have under Turkey's Law
-          on the Protection of Personal Data (KVKK, Law No. 6698) and Google Play's Data
-          Safety requirements. By using the app you agree to this policy.
+          This Privacy Policy explains what personal data the Formda mobile app ("Formda", "the
+          app", "we") collects when you use it, how that data is processed, who we share it with,
+          how long we retain it, and the rights you have under Turkey's Law on the Protection of
+          Personal Data (KVKK, Law No. 6698) and Google Play's Data Safety requirements. By using
+          the app you agree to this policy.
         </p>
 
         <h2>1. Data we collect</h2>
@@ -378,13 +432,14 @@
             <tr>
               <td>Account data</td>
               <td>
-                Email address, password (stored as a one-way hash — we never see it in
-                plain text)
+                Email address, password (stored as a one-way hash — we never see it in plain text)
               </td>
             </tr>
             <tr>
               <td>Profile data</td>
-              <td>Birth year, height, weight, sex, activity level, goal (lose/maintain/gain weight)</td>
+              <td>
+                Birth year, height, weight, sex, activity level, goal (lose/maintain/gain weight)
+              </td>
             </tr>
             <tr>
               <td>
@@ -393,8 +448,8 @@
               </td>
               <td>
                 Health conditions you select (e.g. type 1/type 2 diabetes, celiac disease,
-                hypertension) and the nutrition warnings derived from them. This data is
-                only collected with your explicit consent.
+                hypertension) and the nutrition warnings derived from them. This data is only
+                collected with your explicit consent.
               </td>
             </tr>
             <tr>
@@ -402,11 +457,32 @@
               <td>Food (nutrition) diary, water intake, workout logs, step counts</td>
             </tr>
             <tr>
+              <td>Location / route data</td>
+              <td>
+                Precise location points collected only while you have an active run or ride
+                recording, and the route, distance, duration, and pace/speed built from them.
+                Collected only during an active recording, stored tied to your account; never sold
+                or shared.
+              </td>
+            </tr>
+            <tr>
+              <td>Steps and health data (Health Connect)</td>
+              <td>
+                Your daily step count, read from the Android Health Connect app with read-only
+                access (<code>READ_STEPS</code>); we never write data back to Health Connect. This
+                raw reading is stored tied to your account on Supabase only, and is never shared
+                with any third party with your identity attached. Like your other step data, this
+                count may be included in the anonymized weekly summary described in §3 below (as the
+                total-steps / daily-average-steps fields) that is sent to OpenAI; that summary
+                carries no name, email address, account identifier, or health condition.
+              </td>
+            </tr>
+            <tr>
               <td>Weekly report data</td>
               <td>
-                The numeric summary stored for each week, the motivation message generated
-                from it, and — when you use the "studio voice" read-aloud — the cached audio
-                file of that message
+                The numeric summary stored for each week, the motivation message generated from it,
+                and — when you use the "studio voice" read-aloud — the cached audio file of that
+                message
               </td>
             </tr>
             <tr>
@@ -416,17 +492,16 @@
             <tr>
               <td>Photos</td>
               <td>
-                Meal photos you take or pick for the AI food-recognition feature. They are
-                only transmitted during the recognition request, relayed to OpenAI through
-                our Supabase-hosted server function, and are not stored on our servers or
-                on Supabase.
+                Meal photos you take or pick for the AI food-recognition feature. They are only
+                transmitted during the recognition request, relayed to OpenAI through our
+                Supabase-hosted server function, and are not stored on our servers or on Supabase.
               </td>
             </tr>
             <tr>
               <td>Usage and crash data</td>
               <td>
-                In-app interaction/usage telemetry and technical crash reports (device
-                model, OS version, stack traces and other diagnostic information)
+                In-app interaction/usage telemetry and technical crash reports (device model, OS
+                version, stack traces and other diagnostic information)
               </td>
             </tr>
           </tbody>
@@ -437,14 +512,23 @@
           <li>To create, verify, and secure your account;</li>
           <li>To calculate and display personalized calorie, macro, and activity targets;</li>
           <li>
-            To generate nutrition warnings based on your health conditions (e.g. a high
-            glycemic index warning for diabetes);
+            To generate nutrition warnings based on your health conditions (e.g. a high glycemic
+            index warning for diabetes);
           </li>
           <li>To recognize food and estimate portions from photos (using AI);</li>
           <li>
-            To generate weekly summary reports and motivational messages, and to read that
-            message aloud when you ask for it (with "studio voice" the message text is sent
-            to OpenAI; with "device voice" it is handed to your phone's own speech engine);
+            To record your route, distance, duration, and pace/speed, and to calculate calories
+            burned during a run or ride you start recording;
+          </li>
+          <li>
+            To reconcile the step count read from Health Connect with your in-app workout logs, to
+            avoid double-counting calories (correcting the activity session's calorie figure
+            accordingly);
+          </li>
+          <li>
+            To generate weekly summary reports and motivational messages, and to read that message
+            aloud when you ask for it (with "studio voice" the message text is sent to OpenAI; with
+            "device voice" it is handed to your phone's own speech engine);
           </li>
           <li>To keep the app technically working and to diagnose and fix bugs;</li>
           <li>To comply with legal obligations and respond to your access/deletion requests.</li>
@@ -452,8 +536,8 @@
 
         <h2>3. Third parties we share data with</h2>
         <p>
-          We do not sell your data. To operate the service we share limited, purpose-bound
-          data with the following processors:
+          We do not sell your data. To operate the service we share limited, purpose-bound data with
+          the following processors:
         </p>
         <table>
           <thead>
@@ -468,34 +552,35 @@
               <td>Supabase</td>
               <td>Hosting / database / authentication infrastructure</td>
               <td>
-                All of your account, profile, health, log, and weekly-report data, plus the
-                cached audio files of your reports — stored on Supabase's cloud
-                infrastructure (acting as our data processor). Your meal photos only pass
-                through our Supabase-hosted server function during the recognition request;
-                they are not stored on Supabase.
+                All of your account, profile, health, log, weekly-report, and activity (run/ride)
+                data — including route, distance, duration, and pace/speed — plus the cached audio
+                files of your reports, stored on Supabase's cloud infrastructure (acting as our data
+                processor). The daily step count read from Health Connect is stored on Supabase like
+                your other step data; it may also be included in the anonymized weekly summary
+                described in the OpenAI row below. Your meal photos only pass through our
+                Supabase-hosted server function during the recognition request; they are not stored
+                on Supabase.
               </td>
             </tr>
             <tr>
               <td>OpenAI</td>
               <td>Food recognition (vision), motivation text generation, and text-to-speech</td>
               <td>
-                (a) The meal photos you submit for food recognition; (b) to write the
-                weekly motivation message, your
-                <strong>anonymized weekly summary</strong> — made up of these ten fields
-                only: total steps, daily average steps, calorie target adherence
-                percentage, workout count, total calories burned in workouts, daily average
-                water intake, logged days, streak days, your goal (lose / maintain / gain),
-                and an overall grade for your week (strong / steady / light); (c) when you
-                use the "studio voice" read-aloud, the
-                <strong>message text itself</strong> — which is generated from that summary
-                — is also sent to OpenAI to be turned into audio. Neither that summary nor
-                the text generated from it contains a name, email address, account
-                identifier, or health condition, and none of these is sent to OpenAI in
-                steps (b) or (c). In step (a), whatever appears in the frame of the photo
-                you submit is transmitted to OpenAI. The resulting audio file is cached in
-                a private storage area tied to your account; when you delete your account
-                we delete those audio files too. If a rare storage error prevents that,
-                your account deletion still completes.
+                (a) The meal photos you submit for food recognition; (b) to write the weekly
+                motivation message, your
+                <strong>anonymized weekly summary</strong> — made up of these ten fields only: total
+                steps, daily average steps, calorie target adherence percentage, workout count,
+                total calories burned in workouts, daily average water intake, logged days, streak
+                days, your goal (lose / maintain / gain), and an overall grade for your week (strong
+                / steady / light); (c) when you use the "studio voice" read-aloud, the
+                <strong>message text itself</strong> — which is generated from that summary — is
+                also sent to OpenAI to be turned into audio. Neither that summary nor the text
+                generated from it contains a name, email address, account identifier, or health
+                condition, and none of these is sent to OpenAI in steps (b) or (c). In step (a),
+                whatever appears in the frame of the photo you submit is transmitted to OpenAI. The
+                resulting audio file is cached in a private storage area tied to your account; when
+                you delete your account we delete those audio files too. If a rare storage error
+                prevents that, your account deletion still completes.
               </td>
             </tr>
             <tr>
@@ -504,13 +589,23 @@
               <td>The barcode number you scan; your account identity is not sent.</td>
             </tr>
             <tr>
+              <td>OpenFreeMap</td>
+              <td>Base map (map tiles)</td>
+              <td>
+                While the activity map is on screen (during a live run/ride recording and when
+                viewing a route summary/detail), map tiles are downloaded from OpenFreeMap's
+                servers. Like any web request, these requests reveal the approximate map area being
+                viewed and your device's IP address to OpenFreeMap. No account data, no identity,
+                and none of your stored routes are ever sent to OpenFreeMap.
+              </td>
+            </tr>
+            <tr>
               <td>Sentry</td>
               <td>Crash monitoring and diagnostics</td>
               <td>
-                Technical crash reports (stack traces, device/OS info). Email addresses,
-                health data, and other personal fields are automatically stripped before
-                each report is sent (PII scrubbing); no data that identifies you is sent
-                to Sentry.
+                Technical crash reports (stack traces, device/OS info). Email addresses, health
+                data, and other personal fields are automatically stripped before each report is
+                sent (PII scrubbing); no data that identifies you is sent to Sentry.
               </td>
             </tr>
           </tbody>
@@ -518,60 +613,70 @@
 
         <h2>3.1. International transfers</h2>
         <p>
-          The hosting and data-processing infrastructure of the providers listed above is
-          located outside Türkiye. The data described in this section is therefore
-          transferred abroad in order to provide the service. Any such transfer stays
-          limited to the scope and purpose set out in the table above; your health
-          conditions are stored only on Supabase, which hosts our database, and are never
-          transferred to OpenAI, Sentry or OpenFoodFacts.
+          The hosting and data-processing infrastructure of the providers listed above is located
+          outside Türkiye. The data described in this section is therefore transferred abroad in
+          order to provide the service. Any such transfer stays limited to the scope and purpose set
+          out in the table above; your health conditions and your location/route data are stored
+          only on Supabase, which hosts our database, and are never transferred to OpenAI, Sentry or
+          OpenFoodFacts. The raw step readings taken from Health Connect are likewise stored only on
+          Supabase; as described in §1, your aggregate daily step total carries the same
+          anonymization guarantees as the rest of your step data and can reach OpenAI only as part
+          of the anonymized weekly summary described in the table above.
+        </p>
+        <p>
+          The legal basis for these transfers is your <strong>explicit consent</strong> under
+          Article 9 of Turkey's Law No. 6698 on the Protection of Personal Data (KVKK). By
+          accepting this Privacy Policy and the international-transfer scope described above when
+          creating your account, you give that explicit consent; you may withdraw it at any time by
+          deleting your account in Settings.
         </p>
 
         <h2>4. Data retention</h2>
         <p>
-          We retain your data for as long as your account is active and as necessary to
-          provide the service. Meal photos are an exception: a photo is transmitted to
-          OpenAI for recognition, is not stored on our servers, and only the recognized
-          food entry (name, calories, macros, portion) is saved to your diary; on your
-          phone, a temporary copy of the photo may remain in the app's cache until that
-          cache is cleared. When you delete your account, we first delete the cached audio
-          files of your reports and then your account and all of your personal data on our
-          servers (profile, health conditions, log entries, and weekly reports included),
-          permanently and irreversibly; there is no stored meal photo left to delete. If a
-          rare storage error prevents the audio files from being deleted, your account
-          deletion still completes. De-identified technical crash records sent to Sentry
-          may be retained separately under Sentry's own retention policy; these records do
-          not identify you.
+          We retain your data for as long as your account is active and as necessary to provide the
+          service. Meal photos are an exception: a photo is transmitted to OpenAI for recognition,
+          is not stored on our servers, and only the recognized food entry (name, calories, macros,
+          portion) is saved to your diary; on your phone, a temporary copy of the photo may remain
+          in the app's cache until that cache is cleared. Your location/route data and the step data
+          read from Health Connect are likewise retained for as long as your account is active; you
+          can delete any single activity (run/ride) recording at any time from that activity's
+          detail screen. When you delete your account, we first delete the cached audio files of
+          your reports and then your account and all of your personal data on our servers (profile,
+          health conditions, log entries, activity/location records, and weekly reports included),
+          permanently and irreversibly; there is no stored meal photo left to delete. If a rare
+          storage error prevents the audio files from being deleted, your account deletion still
+          completes. De-identified technical crash records sent to Sentry may be retained separately
+          under Sentry's own retention policy; these records do not identify you.
         </p>
 
         <h2>5. Your rights</h2>
         <p>
-          Under KVKK Article 11 and applicable law, you have the right to learn whether
-          your data is being processed, request information about it, learn its purpose
-          and whether it is used accordingly, and request correction or deletion of your
-          data. You can exercise these rights directly from within the app:
+          Under KVKK Article 11 and applicable law, you have the right to learn whether your data is
+          being processed, request information about it, learn its purpose and whether it is used
+          accordingly, and request correction or deletion of your data. You can exercise these
+          rights directly from within the app:
         </p>
         <ul>
           <li>
-            <strong>Access / portability:</strong> Profile → "Download my data" instantly
-            exports a JSON copy of all of your data stored in our database, which you can
-            save or share.
+            <strong>Access / portability:</strong> Profile → "Download my data" instantly exports a
+            JSON copy of all of your data stored in our database, which you can save or share.
           </li>
           <li>
-            <strong>Deletion:</strong> Profile → "Delete my account" permanently deletes
-            your account and all associated data on our servers (profile, health, logs,
-            weekly reports, and their cached audio files). This cannot be undone. If
-            deleting the audio files hits a rare storage error, your account is still
-            deleted.
+            <strong>Deletion:</strong> Profile → "Delete my account" permanently deletes your
+            account and all associated data on our servers (profile, health, logs, activity/location
+            records, weekly reports, and their cached audio files). This cannot be undone. If
+            deleting the audio files hits a rare storage error, your account is still deleted. You
+            can also permanently delete a single run/ride recording, without deleting your account,
+            from that activity's detail screen.
           </li>
           <li>
-            <strong>Withdrawing consent:</strong> You can withdraw your health-data consent
-            at any time from the in-app Health Settings screen, or delete your recorded
-            health conditions.
+            <strong>Withdrawing consent:</strong> You can withdraw your health-data consent at any
+            time from the in-app Health Settings screen, or delete your recorded health conditions.
           </li>
         </ul>
         <p>
-          For requests outside of the in-app options above, you can reach the data
-          controller using the contact details below.
+          For requests outside of the in-app options above, you can reach the data controller using
+          the contact details below.
         </p>
 
         <h2>6. Data controller contact (KVKK)</h2>
@@ -585,15 +690,14 @@
 
         <h2>7. Children's privacy</h2>
         <p>
-          Formda is not directed at users under the age of 16. If we learn that a user is
-          under 16, we will delete their account and associated data.
+          Formda is not directed at users under the age of 16. If we learn that a user is under 16,
+          we will delete their account and associated data.
         </p>
 
         <h2>8. Changes to this policy</h2>
         <p>
-          We may update this policy from time to time. We will notify you of material
-          changes in-app or by email. The current version is always available on this
-          page.
+          We may update this policy from time to time. We will notify you of material changes in-app
+          or by email. The current version is always available on this page.
         </p>
       </div>
 
